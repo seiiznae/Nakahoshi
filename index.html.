@@ -23,9 +23,9 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #0088cc; /* Warna khas Telegram */
+            background-color: #0088cc;
             color: #ffffff;
-            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
         }
@@ -34,12 +34,11 @@
 <body>
 
     <h1>Silakan Scan QRIS di Bawah</h1>
-    <p>Bisa digunakan untuk Indonesia, Malaysia, dan negara lain yang mendukung QRIS ini.</p>
 
     <img src="https://i.imgur.com/NqAOJSR.jpeg" alt="QRIS Code">
-    
+
     <p>Setelah melakukan pembayaran, silakan kirim bukti pembayaran Anda ke bot kami.</p>
-    
+
     <a href="https://t.me/Nakanosqbot?start=qr" class="button">Kirim Bukti Pembayaran</a>
 
 </body>
