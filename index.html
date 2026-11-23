@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NakaHoshi — Donghua Community & Catalog</title>
+<style>
+:root{--bg:#050b18;--blue:#4aa3ff;--blue2:#8bc7ff;--white:#f4f8ff}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--white)}
+body{overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;inset:auto;pointer-events:none;border-radius:999px;filter:blur(80px);opacity:.55;z-index:0}
+body:before{width:55vw;height:35vw;left:-18vw;top:-12vw;background:#1264c9;animation:drift 11s ease-in-out infinite alternate}
+body:after{width:45vw;height:32vw;right:-14vw;bottom:-10vw;background:#183c92;animation:drift2 13s ease-in-out infinite alternate}
+.beam{position:fixed;inset:-35% -10%;z-index:0;pointer-events:none;background:linear-gradient(115deg,transparent 38%,rgba(75,164,255,.16) 47%,rgba(180,225,255,.08) 50%,transparent 58%);transform:translateX(-30%) rotate(-4deg);animation:beam 9s ease-in-out infinite}
+main{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 5vw;opacity:0;transform:translateY(-12px);animation:in .8s .1s forwards}
+.brand{font-weight:800;letter-spacing:.18em;font-size:13px}.navlink{color:#b9d9ff;text-decoration:none;font-size:13px}
+.hero{width:min(1120px,90vw);margin:auto;padding:8vh 0 10vh;display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center}
+.copy>*{opacity:0;transform:translateY(28px);animation:up .9s forwards}.eyebrow{animation-delay:.25s;color:#7dbdff;letter-spacing:.22em;font-size:11px;font-weight:700}.title{animation-delay:.38s;font-size:clamp(58px,9vw,126px);line-height:.84;letter-spacing:-.075em;margin:18px 0 26px}.title span{display:block;background:linear-gradient(100deg,#fff,#8ecaff 58%,#4b9eff);-webkit-background-clip:text;color:transparent}.desc{animation-delay:.52s;max-width:570px;color:#a8bdd7;line-height:1.7;font-size:16px}.actions{animation-delay:.66s;display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border-radius:999px;text-decoration:none;color:#fff;border:1px solid rgba(139,199,255,.25);background:rgba(16,35,64,.48);backdrop-filter:blur(14px);transition:.3s}.btn.primary{background:linear-gradient(135deg,#2387ff,#1760c7);border-color:rgba(255,255,255,.18);box-shadow:0 12px 40px rgba(35,135,255,.22)}.btn:hover{transform:translateY(-3px);box-shadow:0 16px 45px rgba(52,151,255,.25)}
+.orb{height:min(38vw,430px);width:min(38vw,430px);margin:auto;border-radius:50%;position:relative;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.32),rgba(102,181,255,.13) 18%,rgba(24,79,160,.1) 42%,transparent 67%);border:1px solid rgba(133,201,255,.18);box-shadow:inset 0 0 80px rgba(67,159,255,.1),0 0 90px rgba(30,119,230,.12);animation:float 5s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(118,193,255,.22);border-radius:50%;inset:13%;transform:rotate(25deg) scaleY(.38);animation:spin 12s linear infinite}.orb:after{inset:25%;transform:rotate(-35deg) scaleY(.55);animation-direction:reverse}.orbtext{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-weight:800;letter-spacing:.16em;font-size:clamp(18px,3vw,34px);text-shadow:0 0 30px rgba(92,181,255,.45)}
+.scroll{position:fixed;bottom:25px;left:5vw;color:#7191b4;font-size:10px;letter-spacing:.2em;opacity:0;animation:in 1s 1.2s forwards}
+@keyframes in{to{opacity:1;transform:none}}@keyframes up{to{opacity:1;transform:none}}@keyframes drift{to{transform:translate(25vw,18vh)}}@keyframes drift2{to{transform:translate(-20vw,-15vh)}}@keyframes beam{0%,100%{transform:translateX(-38%) rotate(-4deg);opacity:.25}50%{transform:translateX(38%) rotate(-4deg);opacity:.7}}@keyframes float{50%{transform:translateY(-12px) scale(1.015)}}@keyframes spin{to{transform:rotate(385deg) scaleY(.38)}}@media(max-width:760px){nav{padding:22px 6vw}.hero{grid-template-columns:1fr;padding-top:7vh;text-align:center}.desc{margin:auto}.actions{justify-content:center}.orb{height:62vw;width:62vw;max-width:330px}.scroll{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body><div class="beam"></div><main>
+<nav><div class="brand">NAKAHOSHI</div><a class="navlink" href="https://t.me/NakaHoshi">Main Channel ↗</a></nav>
+<section class="hero"><div class="copy"><div class="eyebrow">DONGHUA · COMMUNITY · CATALOG</div><h1 class="title">Your gateway to<span>donghua.</span></h1><p class="desc">NakaHoshi is a community hub and catalog for <i>donghua</i> (Chinese animation) with Indonesian subtitles, hosted on Telegram.</p><div class="actions"><a class="btn primary" href="https://t.me/Nakahoshiappbot?startapp=home">Open NakaHoshi Mini App →</a><a class="btn" href="https://t.me/NakaHoshi">Visit Main Channel ↗</a></div></div><div class="orb"><div class="orbtext">NAKA<br>HOSHI</div></div></section>
+<div class="scroll">SCROLL TO EXPLORE</div></main></body></html>
