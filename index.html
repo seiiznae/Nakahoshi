@@ -4,16 +4,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NakaHoshi — Donghua Community & Catalog</title>
 <style>
-:root{--bg:#050b18;--blue:#4aa3ff;--blue2:#8bc7ff;--white:#f4f8ff}
+:root{--bg:#020713;--blue:#3b8fe8;--blue2:#76b7ee;--white:#f4f8ff}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--white)}
 body{overflow-x:hidden}
 body:before,body:after{content:"";position:fixed;inset:auto;pointer-events:none;border-radius:999px;filter:blur(80px);opacity:.55;z-index:0}
-body:before{width:55vw;height:35vw;left:-18vw;top:-12vw;background:#1264c9;animation:drift 11s ease-in-out infinite alternate}
-body:after{width:45vw;height:32vw;right:-14vw;bottom:-10vw;background:#183c92;animation:drift2 13s ease-in-out infinite alternate}
-.beam{position:fixed;inset:-35% -10%;z-index:0;pointer-events:none;background:linear-gradient(115deg,transparent 38%,rgba(75,164,255,.16) 47%,rgba(180,225,255,.08) 50%,transparent 58%);transform:translateX(-30%) rotate(-4deg);animation:beam 9s ease-in-out infinite}
+body:before{width:55vw;height:35vw;left:-18vw;top:-12vw;background:#0d4b98;animation:drift 11s ease-in-out infinite alternate}
+body:after{width:45vw;height:32vw;right:-14vw;bottom:-10vw;background:#102c70;animation:drift2 13s ease-in-out infinite alternate}
+.beam{position:fixed;inset:-35% -10%;z-index:0;pointer-events:none;background:linear-gradient(115deg,transparent 38%,rgba(75,164,255,.11) 47%,rgba(180,225,255,.055) 50%,transparent 58%);transform:translateX(-30%) rotate(-4deg);animation:beam 9s ease-in-out infinite}
 main{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column}
 nav{display:flex;justify-content:space-between;align-items:center;padding:28px 5vw;opacity:0;transform:translateY(-12px);animation:in .8s .1s forwards}
-.brand{font-weight:800;letter-spacing:.18em;font-size:13px}.navlink{color:#b9d9ff;text-decoration:none;font-size:13px}
+.brand{font-weight:800;letter-spacing:.18em;font-size:13px;display:flex;align-items:center;gap:10px}.brandmark{width:24px;height:24px;border:1px solid rgba(139,199,255,.38);border-radius:7px;display:grid;place-items:center;box-shadow:0 0 22px rgba(59,143,232,.16)}.brandmark:before{content:"N";font-size:12px;font-weight:900;color:#d8edff}.navlink{color:#b9d9ff;text-decoration:none;font-size:13px}
 .hero{width:min(1120px,90vw);margin:auto;padding:8vh 0 10vh;display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center}
 .copy>*{opacity:0;transform:translateY(28px);animation:up .9s forwards}.eyebrow{animation-delay:.25s;color:#7dbdff;letter-spacing:.22em;font-size:11px;font-weight:700}.title{animation-delay:.38s;font-size:clamp(58px,9vw,126px);line-height:.84;letter-spacing:-.075em;margin:18px 0 26px}.title span{display:block;background:linear-gradient(100deg,#fff,#8ecaff 58%,#4b9eff);-webkit-background-clip:text;color:transparent}.desc{animation-delay:.52s;max-width:570px;color:#a8bdd7;line-height:1.7;font-size:16px}.actions{animation-delay:.66s;display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 .btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border-radius:999px;text-decoration:none;color:#fff;border:1px solid rgba(139,199,255,.25);background:rgba(16,35,64,.48);backdrop-filter:blur(14px);transition:.3s}.btn.primary{background:linear-gradient(135deg,#2387ff,#1760c7);border-color:rgba(255,255,255,.18);box-shadow:0 12px 40px rgba(35,135,255,.22)}.btn:hover{transform:translateY(-3px);box-shadow:0 16px 45px rgba(52,151,255,.25)}
@@ -24,6 +24,6 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:28px 5
 </style>
 </head>
 <body><div class="beam"></div><main>
-<nav><div class="brand">NAKAHOSHI</div><a class="navlink" href="https://t.me/NakaHoshi">Main Channel ↗</a></nav>
-<section class="hero"><div class="copy"><div class="eyebrow">DONGHUA · COMMUNITY · CATALOG</div><h1 class="title">Your gateway to<span>donghua.</span></h1><p class="desc">NakaHoshi is a community hub and catalog for <i>donghua</i> (Chinese animation) with Indonesian subtitles, hosted on Telegram.</p><div class="actions"><a class="btn primary" href="https://t.me/Nakahoshiappbot?startapp=home">Open NakaHoshi Mini App →</a><a class="btn" href="https://t.me/NakaHoshi">Visit Main Channel ↗</a></div></div><div class="orb"><div class="orbtext">NAKA<br>HOSHI</div></div></section>
+<nav><div class="brand"><span class="brandmark" aria-hidden="true"></span>NAKAHOSHI</div><a class="navlink" href="https://t.me/NakaHoshi">Main Channel ↗</a></nav>
+<section class="hero"><div class="copy"><div class="eyebrow">DONGHUA · COMMUNITY · CATALOG</div><h1 class="title">Your gateway to<span>NakaHoshi.</span></h1><p class="desc">NakaHoshi is a community hub and catalog for <i>donghua</i> (Chinese animation) with Indonesian subtitles, hosted on Telegram. It has attracted over 25,000 public members, alongside a number of paid subscribers supported by a membership system and a dedicated Mini App. We are currently conducting initial experiments toward a web-based version while simultaneously refining the Mini App—please continue exploring our catalog via the NakaHoshi Mini App on Telegram.</p><div class="actions"><a class="btn primary" href="https://t.me/Nakahoshiappbot?startapp=home">Open NakaHoshi Mini App →</a><a class="btn" href="https://t.me/NakaHoshi">Visit Main Channel ↗</a></div></div><div class="orb"><div class="orbtext">NAKA<br>HOSHI</div></div></section>
 <div class="scroll">SCROLL TO EXPLORE</div></main></body></html>
